@@ -2,6 +2,11 @@
 
 int main(void)
 {
-	_printf("asdf %c asdf, %c, %c, %c", 'h', '0', 'b', 't');
+
+	char *s;
+
+	s = "hello again";
+
+	_printf("asdf %c asdf, %c, %c, %c, %s, %s, %c\n", 'h', '0', 'b', 't', "try string", s, 's');
 	return (0);
 }

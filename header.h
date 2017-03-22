@@ -11,6 +11,7 @@ void init_mod_buffer(mod_buffer *b);
 void _parse(buffer *b);
 void apply_f(specs *c, mod_buffer *s, buffer *b);
 void expand_c(va_list ap, mod_buffer *s);
+void expand_s(va_list ap, mod_buffer *s);
 void to_buff(buffer *b);
 void tmp_t_buffer(mod_buffer *s, buffer *b);
 void reset_buffer(char *buffer, int size);

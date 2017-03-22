@@ -6,6 +6,7 @@ void apply_f(specs *c, mod_buffer *s, buffer *b)
 	
 	expand_f f[] = {
 		{'c', expand_c},
+		{'s', expand_s},
 		{'\0', NULL}
 	};
 
