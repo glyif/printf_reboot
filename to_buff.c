@@ -9,7 +9,6 @@ void to_buff(buffer *b)
 	if (b->buff_index < b->buff_bytes)
 	{
 		b->buffer[b->buff_index] = b->format[b->fmt_index];
-		printf(" %c ", b->buffer[b->buff_index]);
 		b->buff_index++;
 		b->fmt_index++;
 	}

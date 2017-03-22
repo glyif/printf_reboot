@@ -20,15 +20,13 @@ int _printf(const char *format, ...)
 	{
 		if (b->format[b->fmt_index] != '%' && b->format[b->fmt_index] != '\0')
 		{
-			printf(" %d ", b->buff_index);
 			to_buff(b);
 		}
 		else
 		{
 			b->fmt_index++;
-			printf(" %d ", b->buff_index);
 			_parse(b);
-			printf("%c", b->buffer[5]);
+			b->fmt_index--;
 		}
 
 	}
