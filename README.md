@@ -7,7 +7,8 @@
 ## Synopsis
 This is a custom implementation of `printf` from the standard library `<stdio.h>`. This project is an application of all C programming knowledge that students have acquired since starting at Holberton School on January 30, 2017.
 
-This is a rewrite of my old printf.
+This is a rewrite of my old printf. This is an improved infrastructure. This no longer require functions that return integers to keep track of the index of the buffer along with a parser that can parse out modifiers and a localbuffer that doesn't overflow because it gets exponentially bigger.
+
 ![image](https://cloud.githubusercontent.com/assets/23224088/24168852/ea80a146-0e38-11e7-881c-97735fbb91c7.jpg)
 
 ## Compilation and use
