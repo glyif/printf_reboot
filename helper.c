@@ -1,6 +1,12 @@
 #include "header.h"
 #include <stdio.h>
 
+/**
+ * int_t_string - converts integer into string
+ * @n: integer
+ *
+ * Return: string
+ */
 char *int_t_string(int n)
 {
 	int i;
