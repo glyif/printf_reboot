@@ -19,10 +19,22 @@ void expand_s(va_list ap, mod_buffer *s)
 
 	string = va_arg(ap, char *);
 	
+	if (string == NULL)
+		string = "(null)";
+
 	while (string[i] != '\0')
 	{
 		s->original[i] = string[i];
 		i++;
 	}
+
+}
+
+void expand_d(va_list ap, mod_buffer *s)
+{
+	int d;
+	d = va_arg(ap, int);
+	
+	s->original = int_t_string(d);
 
 }

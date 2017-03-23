@@ -12,10 +12,16 @@ void _parse(buffer *b);
 void apply_f(specs *c, mod_buffer *s, buffer *b);
 void expand_c(va_list ap, mod_buffer *s);
 void expand_s(va_list ap, mod_buffer *s);
+void expand_d(va_list ap, mod_buffer *s);
 void to_buff(buffer *b);
 void tmp_t_buffer(mod_buffer *s, buffer *b);
 void reset_buffer(char *buffer, int size);
 char _isformatter(char f);
 int _isheight(char f);
 int _isalpha(int c);
+char *int_t_string(int n);
+int _strlen(char *s);
+void _rev(char *s, int start);
+int intlen(int n);
+int _abs(int n);
 #endif
