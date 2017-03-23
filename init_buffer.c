@@ -18,8 +18,8 @@ void init_buffer(buffer *b, const char *format)
 void init_specs(specs *s)
 {
 	int i;
-
-	for (i = 0; i <= 5; i++)
+	
+	for (i = 0; i < 6; i++)
 		s->flag[i] = '\0';
 
 	s->width = 0;
@@ -33,6 +33,6 @@ void init_mod_buffer(mod_buffer *b)
 {
 	b->original = malloc (512);
 	reset_buffer(b->original, 512);
-	b->modified = malloc (1024);
-	reset_buffer(b->modified, 1024);
+	b->modified = malloc (512);
+	reset_buffer(b->modified, 512);
 }

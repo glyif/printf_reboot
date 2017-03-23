@@ -11,6 +11,7 @@ int main(void)
 
 	_printf("asdf %c asdf, %c, %c, %c, %s, %s, %c\n", 'h', '0', 'b', 't', "try string", s, 's');
 	_printf("%s", (char *)0);
-	_printf("this number is %d", d); 
+	_printf("this number is %d\n", d); 
+	_printf("pos: %+d, neg:%+d", 123);
 	return (0);
 }

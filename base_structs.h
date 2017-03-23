@@ -27,8 +27,8 @@ typedef struct mod_buffer
 	char *modified;
 } mod_buffer;
 
-typedef struct expand_f
+typedef struct expander
 {
 	char c;
 	void (*f)();
-} expand_f;
+} expander;

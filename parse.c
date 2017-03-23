@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "header.h"
 
 void _parse(buffer *b)
@@ -36,6 +37,10 @@ void _parse(buffer *b)
 			sep->v = 0;
 			return ;
 		}
+
+		if (b->format[j] == '+')
+			sep->flag[0] = b->format[j];
+		
 		j++;
 	}
 
@@ -48,5 +53,10 @@ void _parse(buffer *b)
 		sep->fmtstring[i] = b->format[b->fmt_index];
 
 	apply_f(sep, expand, b);
+
+	if (sep->flag[0] != '\0')
+		apply_flag(sep, expand);
+
+	tmp_t_buffer(expand, b);
 
 }
